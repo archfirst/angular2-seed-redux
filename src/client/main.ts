@@ -3,14 +3,14 @@ import {bootstrap} from 'angular2/platform/browser';
 import {ROUTER_PROVIDERS, APP_BASE_HREF} from 'angular2/router';
 import {AppComponent} from './app/components/app.component';
 import {createStore, applyMiddleware} from 'redux';
-import thunk from 'redux-thunk';
 import * as redux from  'ng2-redux';
 import {rootReducer} from './reducers';
 
 if ('<%= ENV %>' === 'prod') { enableProdMode(); }
 
+const thunk = require('redux-thunk').default;
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
-const store = createStoreWithMiddleware(rootReducer);
+const store = createStoreWithMiddleware(rootReducer, {});
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS,

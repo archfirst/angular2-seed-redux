@@ -31,7 +31,9 @@
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update"
   },
-  "contributors": ["Naresh Bhatia <nareshbhatia>"],
+  "contributors": [
+    "Naresh Bhatia <nareshbhatia>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "async": "^1.4.2",
@@ -111,7 +113,7 @@
     "es6-module-loader": "^0.17.8",
     "es6-promise": "^3.1.2",
     "es6-shim": "0.35.0",
-    "ng2-redux": "^2.0.2",
+    "ng2-redux": "^2.2.3",
     "redux": "^3.4.0",
     "redux-thunk": "^2.0.1",
     "reflect-metadata": "0.1.2",
